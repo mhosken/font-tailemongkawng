@@ -1,0 +1,21 @@
+FONTLOG
+Tai Le Mong Kawng
+=================
+
+This font provides support of the Tai Le script. It is almost entirely based on
+Noto Sans Tai Le.
+
+Basic Font Information
+----------------------
+
+The design of Tai Le Mong Kawng was created and drawn by the Monotype Design Team
+of Monotype Inc for Google Inc as part of the Noto fonts project.
+
+This font extends that work to include feature support for tone marking.
+
+Acknowledgements
+----------------
+
+D: Monotype Design Team
+W: http://www.monotype.com/studio
+

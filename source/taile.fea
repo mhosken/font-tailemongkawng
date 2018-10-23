@@ -1,0 +1,27 @@
+languagesystem tale dflt;
+
+lookup ccmpWide {
+    sub @cno_wide' @cno_space by @c_wide;
+} ccmpWide;
+
+lookup ccmpSpacing {
+    sub [uni1963 uni1964 uni1965 uni1966 uni196A uni196B] @cno_space' by @c_space;
+} ccmpSpacing;
+
+feature ccmp {
+    lookup ccmpWide;
+    lookup ccmpSpacing;
+} ccmp;
+
+lookup baseMark_U {
+  pos base @U mark @_U;
+} baseMark_U;
+
+feature mark {
+    lookup baseMark_U;
+} mark;
+
+table GDEF {
+    GlyphClassDef @GDEF_bases, , @GDEF_marks, ;
+} GDEF;
+

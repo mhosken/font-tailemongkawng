@@ -1,0 +1,80 @@
+languagesystem tale dflt;
+
+
+# GSUB 
+
+
+lookup ccmpGlyphCompositionDecompositioninTaiLelookup0 {
+  lookupflag 0;
+    sub [\uni196C ]' [\uni0300 \uni0301 \uni0307 \uni0308 \uni030C ]  by [\uni196C.wide ];
+} ccmpGlyphCompositionDecompositioninTaiLelookup0;
+
+lookup ccmpGlyphCompositionDecompositioninTaiLelookup1 {
+  lookupflag 0;
+    sub [\uni1963 \uni1964 \uni1965 \uni1966 \uni196A \uni196B ] [\uni0300 \uni0301 \uni0307 \uni0308 \uni030C ]'  by [\uni0300.space \uni0301.space 
+	\uni0307.space \uni0308.space \uni030C.space ];
+} ccmpGlyphCompositionDecompositioninTaiLelookup1;
+
+feature ccmp {
+
+ script tale;
+     language dflt ;
+      lookup ccmpGlyphCompositionDecompositioninTaiLelookup0;
+      lookup ccmpGlyphCompositionDecompositioninTaiLelookup1;
+} ccmp;
+
+# GPOS 
+
+
+lookup markMarkPositioninginTaiLelookup0 {
+  lookupflag 0;
+  markClass [\uni0300 \uni0301 \uni0307 \uni0308 \uni030C ] <anchor -547 0> @Anchor0;
+  pos base [\uni1950 ] <anchor 0 0> mark @Anchor0;
+  pos base [\uni1951 ] <anchor 92 0> mark @Anchor0;
+  pos base [\uni1952 \uni1962 ] <anchor 43 0> mark @Anchor0;
+  pos base [\uni1953 ] <anchor 102 0> mark @Anchor0;
+  pos base [\uni1954 ] <anchor 97 0> mark @Anchor0;
+  pos base [\uni1955 ] <anchor 63 0> mark @Anchor0;
+  pos base [\uni1956 ] <anchor 219 0> mark @Anchor0;
+  pos base [\uni1957 ] <anchor 258 0> mark @Anchor0;
+  pos base [\uni1958 \uni1960 \uni1969 ] <anchor 14 0> mark @Anchor0;
+  pos base [\uni1959 \uni195B ] <anchor 19 0> mark @Anchor0;
+  pos base [\uni195A ] <anchor 161 0> mark @Anchor0;
+  pos base [\uni195C ] <anchor 170 0> mark @Anchor0;
+  pos base [\uni195D ] <anchor 56 0> mark @Anchor0;
+  pos base [\uni195E ] <anchor 175 0> mark @Anchor0;
+  pos base [\uni195F ] <anchor 68 0> mark @Anchor0;
+  pos base [\uni1961 ] <anchor 107 0> mark @Anchor0;
+  pos base [\uni1963 ] <anchor 131 0> mark @Anchor0;
+  pos base [\uni1964 ] <anchor 429 0> mark @Anchor0;
+  pos base [\uni1965 \uni196B ] <anchor 390 0> mark @Anchor0;
+  pos base [\uni1966 \uni196A ] <anchor 424 0> mark @Anchor0;
+  pos base [\uni1967 \uni1968 ] <anchor -123 0> mark @Anchor0;
+  pos base [\uni196D ] <anchor 78 0> mark @Anchor0;
+  pos base [\uni196C.wide ] <anchor 273 -27> mark @Anchor0;
+  pos base [\uni25CC ] <anchor 65 0> mark @Anchor0;
+} markMarkPositioninginTaiLelookup0;
+
+feature mark {
+
+ script tale;
+     language dflt ;
+      lookup markMarkPositioninginTaiLelookup0;
+} mark;
+#Mark attachment classes (defined in GDEF, used in lookupflags)
+
+@GDEF_Simple = [\NULL \CR \space \uni00A0 \uni1950 \uni1951 \uni1952 \uni1953 
+	\uni1954 \uni1955 \uni1956 \uni1957 \uni1958 \uni1959 \uni195A \uni195B \uni195C 
+	\uni195D \uni195E \uni195F \uni1960 \uni1961 \uni1962 \uni1963 \uni1964 \uni1965 
+	\uni1966 \uni1967 \uni1968 \uni1969 \uni196A \uni196B \uni196C \uni196D \uni1970 
+	\uni1971 \uni1972 \uni1973 \uni1974 \uni3001 \uni3002 \uni3008 \uni3009 \uni300A 
+	\uni300B \uni1040 \uni1041 \uni1042 \uni1043 \uni1044 \uni1045 \uni1046 \uni1047 
+	\uni1048 \uni1049 \uni0300.space \uni0301.space \uni0307.space \uni0308.space 
+	\uni030C.space \uni196C.wide \uni200B \uni200C \uni200D \uni25CC ];
+@GDEF_Mark = [\uni0300 \uni0301 \uni0307 \uni0308 \uni030C ];
+
+table GDEF {
+  GlyphClassDef @GDEF_Simple, , @GDEF_Mark, ;
+
+} GDEF;
+
