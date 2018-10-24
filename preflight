@@ -1,0 +1,10 @@
+#!/bin/sh
+# Script for calling multiple routines on a project, typically prior to committing to a repository.
+
+echo "Check and normalize Regular..."
+psfnormalize -p checkfix=fix source/*.ufo
+
+echo "Updating WOFF metadata file..."
+psfmakewoffmetadata -q -n Tai Le Mong Kawng -i org.sil.fonts source/*.ufo
+
+echo "preflight completed!"
