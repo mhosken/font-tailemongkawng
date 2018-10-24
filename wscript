@@ -11,7 +11,7 @@ getufoinfo('source/TaiLeMongKawng-Regular.ufo')
 BUILDLABEL = "alpha"
 
 font(target = 'TaiLeMongKawng.ttf',
-        source = 'source/TaiLeMongKawng.ufo',
+        source = 'source/TaiLeMongKawng-Regular.ufo',
         opentype = fea('TaiLeMongKawng.fea',
                 master = 'source/taile.fea'),
         fret = fret(params='-r -oi'),
