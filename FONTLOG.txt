@@ -11,11 +11,33 @@ Basic Font Information
 The design of Tai Le Mong Kawng was created and drawn by the Monotype Design Team
 of Monotype Inc for Google Inc as part of the Noto fonts project.
 
-This font extends that work to include feature support for tone marking.
+It was released under the Open Font License (OFL).
+
+
+
+ChangeLog
+------------
+
+
+September 2017 (Google - Monotype) Noto Sans Tail Le version 1.900
+- Initial public release 
+
+October 2018 (SIL International) Tai Le Mong Kawng version 0.100
+- This derivative font extends that work to include feature support for tone marking.
+- Added smith workflow to build from UFO sources along with necessary files 
+
 
 Acknowledgements
 ----------------
 
-D: Monotype Design Team
+N: Monotype Design Team
 W: http://www.monotype.com/studio
+D: Original design and production 
+
+
+N: SIL International
+W: http://software.sil.org 
+D: Design of tone marking, build engineering
+
+
 
